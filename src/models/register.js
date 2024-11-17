@@ -1,4 +1,3 @@
-// src/components/Register.js
 import React, { useState } from 'react';
 import { getUsers, saveUsers } from '../storage.js';
 

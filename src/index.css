@@ -1,0 +1,236 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Styling for headers */
+h1, h2, h3 {
+  color: #4CAF50;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* A basic container for the content */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #4CAF50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #388E3C;
+  color: #fff;
+}
+
+/* Form styling */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388E3C;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Enhanced Dashboard styles */
+.dashboard {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.dashboard h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Input styling for new post */
+.dashboard input[type="text"] {
+  width: calc(100% - 110px); /* Leave space for button */
+  padding: 12px;
+  margin: 10px 10px 20px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard button.add-post-btn {
+  width: 90px;
+  padding: 12px;
+  margin: 0;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard button.add-post-btn:hover {
+  background-color: #388E3C;
+}
+
+/* Post list styling */
+.dashboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Post content styling */
+.dashboard li .post-content {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+  margin-right: 20px;
+}
+
+/* Like button styling */
+.dashboard li .like-btn {
+  font-size: 5px !important;
+  padding: 4px 8px !important;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.dashboard li .like-btn:hover {
+  background-color: #005F75;
+}
+
+.dashboard li .like-count {
+  font-size: 14px;
+  color: #4CAF50;
+  font-weight: bold;
+  padding-right: 21px;
+}
+
+/* Highlight liked posts */
+.dashboard li.liked-post {
+  border-left: 3px solid #4CAF50;
+  background-color: #e8f5e9;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 15px;
+  }
+
+  .dashboard input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .dashboard button.add-post-btn {
+    width: 100%;
+  }
+
+  .dashboard li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard li .post-content {
+    margin-bottom: 10px;
+  }
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 5px solid #4CAF50;
+}

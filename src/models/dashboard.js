@@ -1,4 +1,3 @@
-// src/components/Dashboard.js
 import React, { useState, useEffect } from 'react';
 import { getPosts, savePosts, getUsers, saveUsers } from '../storage.js';
 
@@ -34,11 +33,9 @@ function Dashboard({ user }) {
     setPosts(updatedPosts);
     savePosts(updatedPosts);
 
-    // Update the liked posts for the current user
     const updatedLikedPosts = [...likedPosts, postId];
     setLikedPosts(updatedLikedPosts);
 
-    // Update user data in Local Storage
     const users = getUsers();
     const updatedUsers = users.map((u) =>
       u.username === user ? { ...u, likedPosts: updatedLikedPosts } : u

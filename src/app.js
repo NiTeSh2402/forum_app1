@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useState } from 'react';
 import Register from './models/register.js';
 import Login from './models/login.js';

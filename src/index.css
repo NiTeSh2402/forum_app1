@@ -1,4 +1,4 @@
-/* General body styling */
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
@@ -8,14 +8,13 @@ body {
   line-height: 1.6;
 }
 
-/* Styling for headers */
+
 h1, h2, h3 {
   color: #4CAF50;
   text-align: center;
   margin: 10px 0;
 }
 
-/* A basic container for the content */
 .container {
   width: 80%;
   max-width: 1200px;
@@ -23,7 +22,6 @@ h1, h2, h3 {
   padding: 20px;
 }
 
-/* Navigation styling */
 nav {
   display: flex;
   justify-content: center;
@@ -46,7 +44,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* Form styling */
 form {
   background: white;
   padding: 20px;
@@ -93,7 +90,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Enhanced Dashboard styles */
 .dashboard {
   background-color: #ffffff;
   padding: 20px;
@@ -111,7 +107,6 @@ button:disabled {
   font-weight: bold;
 }
 
-/* Input styling for new post */
 .dashboard input[type="text"] {
   width: calc(100% - 110px); /* Leave space for button */
   padding: 12px;
@@ -139,7 +134,6 @@ button:disabled {
   background-color: #388E3C;
 }
 
-/* Post list styling */
 .dashboard ul {
   list-style: none;
   padding: 0;
@@ -162,7 +156,6 @@ button:disabled {
   background-color: #f0f0f0;
 }
 
-/* Post content styling */
 .dashboard li .post-content {
   flex-grow: 1;
   font-size: 16px;
@@ -170,7 +163,6 @@ button:disabled {
   margin-right: 20px;
 }
 
-/* Like button styling */
 .dashboard li .like-btn {
   font-size: 5px !important;
   padding: 4px 8px !important;
@@ -193,14 +185,12 @@ button:disabled {
   padding-right: 21px;
 }
 
-/* Highlight liked posts */
 .dashboard li.liked-post {
   border-left: 3px solid #4CAF50;
   background-color: #e8f5e9;
 }
 
-/* Responsive layout */
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* created this for responsiive ui*/
   .dashboard {
     padding: 15px;
   }
@@ -224,7 +214,6 @@ button:disabled {
   }
 }
 
-/* Footer styling */
 footer {
   text-align: center;
   padding: 20px;
